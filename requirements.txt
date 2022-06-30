@@ -1,0 +1,9 @@
+pyodbc
+werkzeug
+sqlalchemy
+mssql
+pymssql
+openpyxl
+pandas
+Flask
+flask_login

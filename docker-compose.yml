@@ -1,0 +1,16 @@
+version: "3.9"
+
+networks:
+  gotte-net:
+    external: true
+
+services:
+  flask_app:
+    build: .
+    container_name: flask_app
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    networks:
+      gotte-net:
+        ipv4_address: 190.160.0.205
